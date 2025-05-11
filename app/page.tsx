@@ -1,15 +1,10 @@
-"use client";
-
-
-import { useState } from "react";
+import Counter from "./Counter";
 
 export default function Home() {
-  const [count, setCount] = useState(0);
   return (
     <div>
       <h1>Home</h1>
-      <p>Counteer: {count}</p>
-      <button onClick={() => setCount(count + 1)}>Add</button>
+      <Counter />
     </div>
   );
 }
